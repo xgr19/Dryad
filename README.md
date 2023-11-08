@@ -18,8 +18,7 @@
 
 ```
 
-## Train the ODT
-#### (lin-jy22@mails.tsinghua.edu.cn)  
+## Train the ODT (lin-jy22@mails.tsinghua.edu.cn)  
 
 wait for adding ...
 
