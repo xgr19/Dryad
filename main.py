@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-# 得到第一次软剪枝后的json模型
 import pickle
 import json
 import copy
@@ -353,11 +352,6 @@ def soft_prune(json_model):
 if __name__ == '__main__':
     # 加载训练集和测试集（8个特征）
     print('**********Loading data (start)**********')
-    # feature_list = [
-    #     'Total length', 'Protocol', 'IPV4 Flags (DF)', 'IPV4 Flags (MF)', 'Header length',
-    #     'Time to live', 'Src Port', 'Dst Port', 'TCP flags (Acknowledgment)',
-    #     'TCP flags (Push)', 'TCP flags (Reset)', 'TCP flags (Syn)', 'TCP flags (Fin)'
-    # ]
     feature_list = [
         'Total length', 'Protocol', 'IPV4 Flags (DF)', 'Time to live',
         'Src Port', 'Dst Port', 'TCP flags (Reset)', 'TCP flags (Syn)'
@@ -428,10 +422,7 @@ if __name__ == '__main__':
 
     # 硬剪枝+第二次软剪枝
     print('**********Pruning (start)**********')
-    # limit_depth_list = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38,
-    #                     40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, int(1e10)]
-    # limit_depth_list = [4, 12, 20, 28, 36]
-    limit_depth_list = [4]
+    limit_depth_list = [4, 12, 20, 28, 36]
     for limit_depth in limit_depth_list:
         # 硬剪枝
         print('---limit_depth = %d---' % limit_depth)
