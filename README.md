@@ -13,6 +13,7 @@
   -- first_soft_pruned_tree.json (the original trained ODT)
   -- x_test.pkl and y_test.pkl (input samples and their labels for testing a pruned ODT)
 
+-- main.py (main function for training ODT with soft and hard pruning)
 -- install_process.py (the progressive search and compiler for the OpenMesh switch)
 -- prune_util.py (helpful functions to conduct pruning, and loading model/test data, etc.)
 
@@ -20,7 +21,7 @@
 
 ## Train the ODT (lin-jy22@mails.tsinghua.edu.cn)  
 
-wait for adding ...
+1. run main.py, the code trains the ODT and performs soft pruning and hard pruning
 
 ## Run progressive search & generate P4
 1. run install_process.py, the code will output the settings for a suitable ODT (table arrangement type, bit, depth) and the P4 table entries for the ODT
