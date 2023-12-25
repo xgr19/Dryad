@@ -21,7 +21,7 @@
 
 ## Train the ODT (lin-jy22@mails.tsinghua.edu.cn)  
 
-1. run main.py, the code trains the ODT and performs soft pruning and hard pruning
+1. run main.py, the code trains the ODT and performs soft pruning and hard pruning. The output tree model is in json format for subsequent operations.
 
 ## Run progressive search & generate P4
 1. run install_process.py, the code will output the settings for a suitable ODT (table arrangement type, bit, depth) and the P4 table entries for the ODT
